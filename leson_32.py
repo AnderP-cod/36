@@ -1,7 +1,7 @@
 
 class MycastomError(Exception):
     def __str__(self):
-        return "Делить на ноль нельзя"
+        return "айайай делить на ноль нельзя"
 
 
 def examination(a, b):
