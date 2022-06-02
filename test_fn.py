@@ -1,5 +1,6 @@
 import unittest
 import fn
+import leson_32
 
 
 class Testfn(unittest.TestCase):
