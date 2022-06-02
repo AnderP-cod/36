@@ -1,16 +1,14 @@
-class MycastomError(Exception):
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
 
+class MycastomError(Exception):
     def __str__(self):
-        if self.b == 0:
-            print("айайай делить на 0 не нельзя")
+        return "Делить на ноль нельзя"
+
 
 def examination(a, b):
     """Проверка деление на 0"""
-    try:
+    if a > 0 and b > 0:
         print(int(a / b))
-    except ZeroDivisionError:
-        print("айайай делить на 0 не нельзя")
+        return int(a / b)
+    elif b == 0:
+        raise MycastomError
 
